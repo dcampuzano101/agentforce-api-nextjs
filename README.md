@@ -1,6 +1,6 @@
 # Agentforce Chat Deployment
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy/?template=https://github.com/dcampuzano101/agentforce-api-nextjs)
 
 A Next.js application that enables Salesforce/MuleSoft Solution Engineers to quickly deploy and test their Agentforce Agents. This application provides a clean interface for interacting with Agentforce Agents through the Salesforce Agent API.
 
