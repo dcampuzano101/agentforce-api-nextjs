@@ -46,7 +46,7 @@ You'll need the following information to configure the application:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/agentforce-deployment.git
+git clone https://github.com/dcampuzano101/agentforce-api-nextjs.git
 ```
 
 2. Install dependencies:
