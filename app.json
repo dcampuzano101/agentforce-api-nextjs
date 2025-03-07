@@ -1,0 +1,35 @@
+{
+  "name": "Agentforce API Chat Deployment",
+  "description": "A Next.js application for quickly deploying and testing Salesforce Agentforce Agents",
+  "repository": "https://github.com/dcampuzano101/agentforce-api-nextjs",
+  "logo": "https://raw.githubusercontent.com/dcampuzano101/agentforce-api-nextjs/main/lib/images/agentforce-agent-astro.png",
+  "keywords": ["salesforce", "agentforce", "mulesoft", "nextjs", "chat"],
+  "env": {
+    "SF_CLIENT_ID": {
+      "description": "Salesforce Connected App Client ID",
+      "required": true
+    },
+    "SF_CLIENT_SECRET": {
+      "description": "Salesforce Connected App Client Secret",
+      "required": true
+    },
+    "SF_AGENT_ID": {
+      "description": "The 18-character ID of your Agentforce Agent (found in the Agent Overview Page URL)",
+      "required": true
+    },
+    "SF_BASE_URL": {
+      "description": "Salesforce Einstein AI Agent API Base URL",
+      "value": "https://api.salesforce.com/einstein/ai-agent/v1",
+      "required": true
+    },
+    "SF_DOMAIN": {
+      "description": "Your Salesforce My Domain URL (from Setup > My Domain)",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
