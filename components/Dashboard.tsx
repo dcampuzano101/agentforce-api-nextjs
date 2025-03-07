@@ -65,9 +65,9 @@ export default function Dashboard() {
         body: JSON.stringify({
           action: "createSession",
           sessionData: {
-            externalSessionKey: "1f6c6130-4f70-45b1-abe5-aebe41e1a1f1",
+            externalSessionKey: crypto.randomUUID(),
             instanceConfig: {
-              endpoint: "https://dcampuzano-241210-56-demo.my.salesforce.com",
+              endpoint: process.env.SF_DOMAIN!,
             },
             streamingCapabilities: {
               chunkTypes: ["Text"],
