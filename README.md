@@ -1,6 +1,6 @@
 # Agentforce Chat Deployment
 
-A Next.js application that enables Salesforce/MuleSoft Solution Engineers to quickly deploy and test their Agentforce Agents. This application provides a clean interface for interacting with Agentforce Agents through the Salesforce Agent API.
+A Next.js application that enables quick deployment and testing their Agentforce Agents on a live website. This application provides a clean interface for interacting with Agentforce Agents through the Salesforce Agent API.
 
 ## Features
 
