@@ -1,7 +1,5 @@
 # Agentforce Chat Deployment
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy/?template=https://github.com/dcampuzano101/agentforce-api-nextjs)
-
 A Next.js application that enables Salesforce/MuleSoft Solution Engineers to quickly deploy and test their Agentforce Agents. This application provides a clean interface for interacting with Agentforce Agents through the Salesforce Agent API.
 
 ## Features
@@ -16,10 +14,11 @@ A Next.js application that enables Salesforce/MuleSoft Solution Engineers to qui
 
 Before deploying this application, ensure you have:
 
-1. An active Agentforce Agent
-2. A Salesforce Connected App that supports the client credential flow
+1. A Heroku account (Available via Salesforce SSO)
+2. An active Agentforce Agent
+3. A Salesforce Connected App that supports the client credential flow
    - For more information, see [Create a Connected App](https://help.salesforce.com/s/articleView?id=sf.connected_app_create.htm) in Salesforce Help
-3. The Connected App added to your Agent
+4. The Connected App added to your Agent
 
 ## Required Configuration
 
@@ -34,6 +33,8 @@ You'll need the following information to configure the application:
 - `SF_DOMAIN`: Your Salesforce My Domain URL (found in Setup > My Domain)
 
 ## Quick Deploy
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy/?template=https://github.com/dcampuzano101/agentforce-api-nextjs)
 
 1. Click the "Deploy to Heroku" button above
 2. Fill in the required environment variables
