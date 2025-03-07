@@ -43,6 +43,10 @@ export async function POST(request: Request) {
     let url = "";
     if (action === "createSession") {
       url = `${BASE_URL}/agents/${SF_AGENT_ID}/sessions`;
+      // Ensure sessionData includes the endpoint in instanceConfig
+      if (data.sessionData?.instanceConfig) {
+        data.sessionData.instanceConfig.endpoint = SF_DOMAIN;
+      }
     } else if (action === "sendMessage") {
       url = `${BASE_URL}/sessions/${data.sessionId}/messages`;
     }
@@ -59,7 +63,12 @@ export async function POST(request: Request) {
       },
       body: JSON.stringify(
         action === "createSession"
-          ? data.sessionData
+          ? {
+              ...data.sessionData,
+              instanceConfig: {
+                endpoint: SF_DOMAIN,
+              },
+            }
           : { message: data.message }
       ),
     });
